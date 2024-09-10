@@ -1,0 +1,234 @@
+body{
+    background-color: black;
+    background-image: url(img/pexels-pixabay-159400.png);
+    background-size: 100%;
+    background-repeat: no-repeat;   
+}
+
+@font-face{
+    font-family: Myriad_Pro_Light;
+    src: url(/font/MyriadPro-Light.otf);
+}
+@font-face{
+    font-family: Myriad_Pro_Regular;
+    src: url(/font/MYRIADPRO-REGULAR.OTF);
+}
+
+.logo{
+    position:absolute;
+    
+    margin-top: 16vw;
+    margin-left: 43vw;
+    animation-name: kairo;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+
+    
+}
+
+/*logo*/
+
+.karioLogo{
+    width: 15vw;
+}
+
+@keyframes kairo{
+    0%{opacity: 0;}
+    33%{opacity: 1;}
+    66%{opacity: 0;}
+    100%{opacity: 1;} 
+}
+
+
+/*cuadro login*/
+
+.cuadroBlanco{
+    position: absolute;
+    background-color: white;
+    width: 45vw;
+    height: 36vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 27vw;
+    top: -5vw;
+    border-radius: 3vw;
+    padding-top: 2vw;
+    margin-top: 10vw;
+    animation-name: cuadro;
+    animation-delay: 3s;
+    animation-duration: 1s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+    
+    
+    
+}
+
+@keyframes cuadro{
+    0%{opacity: 0;}
+
+    100%{opacity: 1;}
+}
+
+
+
+.karioMedia{
+    width: 7vw;
+}
+
+
+
+.letraBienvenido{
+    text-align: center;
+    font-size: 1.8vw;
+    font-family: Myriad_Pro_Regular;
+}
+
+.indicacion{
+    margin-top: 0vw;
+    font-size: 1vw;
+    font-family: Myriad_Pro_Light;
+}
+
+.karioMedia{
+    width: 5vw;
+}
+
+.letraUsuario{
+    width: 1vw;
+    margin-left: 2vw;
+    margin-bottom: 0.5vw;
+    font-size: 1.4vw;
+    font-family: Myriad_Pro_Light;
+    opacity: 50%;
+}
+
+.usuario{
+    width: 28vw;
+    height: 2vw;
+    border-radius: 8vw;
+    padding-left: 2vw;
+    opacity: 50%;
+}
+
+.letraContrasena{
+    width: 1vw;
+    margin-left: 2vw;
+    margin-bottom: 0.5vw;
+    font-size: 1.4vw;
+    font-family: Myriad_Pro_Light;
+    opacity: 50%;
+}
+
+.contrasena{
+    width: 28vw;
+    height: 2vw;
+    border-radius: 8vw;
+    padding-left: 2vw;
+    opacity: 50%;
+}
+
+.botonPanel{
+    background-color: #ff7221;
+    border: none;
+    margin-top: 1vw;
+    border-radius: 3vw;
+    width: 15vw;
+    height: 3vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.letraIngresar{
+    color: white;
+    font-size: 1vw;
+    text-decoration: none;
+    font-family: Myriad_Pro_Light;
+}
+
+.problemas{
+    font-size: 0.8vw;
+    font-family: Myriad_Pro_Light;
+}
+
+/*Media query*/
+
+@media only screen and (max-width: 768px) {
+    .contenedor1 {
+        background-color: black;
+        background-image: url(img/pexels-pixabay-159400.png);
+        background-size: 100%;
+        background-repeat: repeat;
+        height: 500vw;
+        margin-top: 20vw;
+    }
+    
+    
+    .cuadroBlanco{
+        position: absolute;
+        background-color: white;
+        
+        width: 90vw;
+        height: 115vw;
+        margin-left: 3vw;
+        top: 15vw;
+         
+    }
+
+    .logo img{
+        margin-left: -15vw;
+        margin-top: 25vw;
+        width: 40vw; 
+    }
+
+    .cuadroBlanco img{
+        width: 10vw;
+    }
+
+    .cuadroBlanco .letraBienvenido{
+        font-size: 5vw;
+    }
+
+    .cuadroBlanco .indicacion{
+        font-size: 2.5vw;
+    }
+
+    .cuadroBlanco .letraUsuario, .letraContrasena{
+        font-size: 5vw;
+        position: relative;
+        left: 12vw;
+        
+    }
+
+    .cuadroBlanco .letraUsuario{
+        font-size: 5vw;
+        position: relative;
+        left: 15vw;
+        
+    }
+
+    .cuadroBlanco input{
+        width: 50vw;
+        height: 8vw;
+    }
+
+    .cuadroBlanco .botonPanel{
+        width: 35vw;
+        height: 10vw;
+        margin-top: 5vw;
+        border-radius: 5vw;
+        margin-bottom: 5vw;
+    }
+
+    .cuadroBlanco .letraIngresar{
+        font-size: 3vw;
+    }
+
+    .cuadroBlanco .problemas{
+        font-size: 3vw;
+        text-align: center;
+        margin-bottom: 5vw;
+    }
+}
